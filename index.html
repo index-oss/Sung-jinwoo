@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling | Sung Jin-Woo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+        .hero-bg {
+            background: linear-gradient(to right, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.2) 60%, transparent 100%), 
+                        url('1.png'); /* Note: Replace with your local path if needed */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .rank-s {
+            color: #fbbf24;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 0 0 15px rgba(251, 191, 36, 0.6);
+        }
+        .nav-link:hover {
+            color: #60a5fa;
+            text-shadow: 0 0 8px #60a5fa;
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="absolute top-0 w-full z-50 flex justify-between items-center px-12 py-8">
+        <div class="flex items-center space-x-12">
+            <div class="text-2xl font-black tracking-tighter italic">나 혼자만 레벨업</div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#" class="nav-link text-white">Home</a>
+                <a href="#" class="nav-link">Characters</a>
+                <a href="#" class="nav-link">Help</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="#" class="uppercase text-xs tracking-widest hover:text-blue-400 transition">Sign Up</a>
+            <div class="bg-white/10 p-2 rounded-full cursor-pointer hover:bg-white/20">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero-bg flex items-center px-12 relative">
+        
+        <div class="max-w-xl z-10 animate-fade-in">
+            <div class="flex items-center space-x-3 mb-2">
+                <span class="rank-s text-5xl font-black italic">S</span>
+                <span class="text-gray-400 text-xs tracking-[0.3em] uppercase mt-4">Rank</span>
+            </div>
+            
+            <p class="text-gray-400 text-sm tracking-widest uppercase mb-1">Shadow Monarch A.K.A</p>
+            <h1 class="text-6xl font-black uppercase tracking-tighter mb-2 glow-text">Sung Jin Woo</h1>
+            <h2 class="text-2xl font-bold text-gray-500 mb-8">(성진우)</h2>
+
+            <div class="space-y-6 text-gray-300 text-sm leading-relaxed max-w-md border-l-2 border-blue-500 pl-6">
+                <p>
+                    Sung Jin-Woo (성진우) is the protagonist of Solo Leveling. He was previously known as the World's Weakest Hunter and delved down the path of becoming the World's Strongest Hunter after he Reawakened and became a Player.
+                </p>
+                <p>
+                    Jin-Woo was reawakened as a Player after surviving the Cartenon Temple and completing the secret quest "Courage of the Weak". The mysterious System has allowed Jin-Woo to limitless level up and increases his strength, unlike all hunters, who are unable to increase their strength unless reawakened.
+                </p>
+            </div>
+        </div>
+
+        <div class="absolute right-12 top-1/2 -translate-y-1/2 text-right space-y-4">
+            <h3 class="text-4xl font-black mb-6 flex items-center justify-end">
+                <span class="w-2 h-2 bg-white rounded-full mr-4"></span> ABOUT
+            </h3>
+            <ul class="space-y-3 uppercase text-[10px] tracking-[0.4em] text-gray-500 font-bold">
+                <li class="hover:text-white cursor-pointer transition">Affiliation</li>
+                <li class="hover:text-white cursor-pointer transition text-blue-400">Status</li>
+                <li class="hover:text-white cursor-pointer transition">Relationships</li>
+                <li class="hover:text-white cursor-pointer transition">Skills</li>
+                <li class="hover:text-white cursor-pointer transition">Troops</li>
+                <li class="hover:text-white cursor-pointer transition border-b border-gray-700 pb-2">Weapons & EQS</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="absolute bottom-6 w-full text-center text-[10px] text-gray-600 tracking-widest uppercase">
+        shiningmelon.deviantart.com | Concept UI Design
+    </footer>
+
+</body>
+</html>
